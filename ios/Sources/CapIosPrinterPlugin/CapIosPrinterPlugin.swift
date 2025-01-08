@@ -23,6 +23,7 @@ public class CapIosPrinterPlugin: CAPPlugin, CAPBridgedPlugin {
 
     @objc func printText(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""
+        print("i am here")
         call.resolve([
           "value": implementation.printText(value)
         ])
