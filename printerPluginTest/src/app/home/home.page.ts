@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CapIosPrinter } from 'cap-ios-printer';
 
 @Component({
   selector: 'app-home',
@@ -9,5 +10,8 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
+  async handleClick() {
+    const r = await CapIosPrinter.printText("test")
 
+  }
 }
