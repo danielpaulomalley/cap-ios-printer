@@ -11,7 +11,7 @@ export class HomePage {
 
   constructor() {}
   async handleClick() {
-    const r = await CapIosPrinter.echo({value: "test"})
+    const r = await CapIosPrinter.printText({value: "test"})
 
   }
 }

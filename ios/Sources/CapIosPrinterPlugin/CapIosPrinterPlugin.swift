@@ -10,7 +10,8 @@ public class CapIosPrinterPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "CapIosPrinterPlugin"
     public let jsName = "CapIosPrinter"
     public let pluginMethods: [CAPPluginMethod] = [
-        CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "printText", returnType: CAPPluginReturnPromise)
     ]
     private let implementation = CapIosPrinter()
 
