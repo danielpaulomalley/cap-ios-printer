@@ -39,14 +39,14 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 ### printText(...)
 
 ```typescript
-printText(txt: string) => Promise<string>
+printText(options: { value: string; }) => Promise<{ value: string; }>
 ```
 
-| Param     | Type                |
-| --------- | ------------------- |
-| **`txt`** | <code>string</code> |
+| Param         | Type                            |
+| ------------- | ------------------------------- |
+| **`options`** | <code>{ value: string; }</code> |
 
-**Returns:** <code>Promise&lt;string&gt;</code>
+**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
 
