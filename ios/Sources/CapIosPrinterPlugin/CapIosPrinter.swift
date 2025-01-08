@@ -5,4 +5,9 @@ import Foundation
         print(value)
         return value
     }
+
+    @objc public func printText(_ value: String) -> String {
+      print(value)
+      return value
+    }
 }

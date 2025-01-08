@@ -20,4 +20,11 @@ public class CapIosPrinterPlugin: CAPPlugin, CAPBridgedPlugin {
             "value": implementation.echo(value)
         ])
     }
+
+    @objc func printText(_ call: CAPPluginCall) {
+        let value = call.getString("value") ?? ""
+        call.resolve([
+          "value": implementation.printText(value)
+        ])
+    }
 }

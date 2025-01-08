@@ -7,4 +7,8 @@ export class CapIosPrinterWeb extends WebPlugin implements CapIosPrinterPlugin {
     console.log('ECHO', options);
     return options;
   }
+
+  async printText(txt: string): Promise<string> {
+    return txt
+  }
 }
