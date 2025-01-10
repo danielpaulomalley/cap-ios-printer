@@ -1,5 +1,6 @@
 import Foundation
 import Capacitor
+import BRLMPrinterKit
 
 /**
  * Please read the Capacitor iOS Plugin Development Guide
@@ -14,6 +15,7 @@ public class CapIosPrinterPlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "printText", returnType: CAPPluginReturnPromise)
     ]
     private let implementation = CapIosPrinter()
+    
 
     @objc func echo(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""
